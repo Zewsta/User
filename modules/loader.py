@@ -69,7 +69,7 @@ async def loadmod(_, message: Message):
             "https://raw.githubusercontent.com/The-MoonTg-project/custom_modules/main/"
         ):
             module_name = url.split("/")[-1].split(".")[0]
-        elif "/" not in url and "." not in url:
+        elif "." not in url:
             module_name = url.lower()
             url = f"https://raw.githubusercontent.com/The-MoonTg-project/custom_modules/main/{module_name}.py"
         else:
